@@ -1,0 +1,53 @@
+.text-about{
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 29px;
+    margin-right: 6%;
+    margin-left: 14%;
+}
+
+.about-padding-top{
+    padding-top: 6%;
+}
+
+
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+    width:auto;
+}
+
+.brush{
+    position: absolute;
+    top: -50px;
+}
+
+.brush img{
+    width: 100%;
+}
+
+.slick-slide img {
+    display: initial;
+}
+
+
+@media (min-width: 768px) and (max-width:990px ){
+    .img-res-padding{
+        padding-top: 130px;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1198px ){
+    .img-res-padding{
+        padding-top: 50px;
+    }
+}
+
+
+@media (max-width: 660px){
+    .brush{
+        position: absolute;
+        top: -20px;
+    }
+
+}

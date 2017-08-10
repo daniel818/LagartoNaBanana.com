@@ -1,0 +1,50 @@
+.img-slider-container {
+    max-width: 100%;
+    height: 300px;
+    width: auto;
+
+}
+
+.container-images{
+    padding-bottom: 0px;
+    padding-top: 36px;
+    background-color: #79CFCB;
+    position: relative;
+}
+
+
+.brushStyle-g{
+    max-width: 100%;
+    top: 29px;
+    left: 1px;
+    position: relative;
+    z-index: 1
+}
+
+.brush2Style-g{
+    max-width: 100%;
+    bottom: 37px;
+    left: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+@media (max-width: 430px) {
+    .brush-res {
+        max-width: 100%;
+        top: 21px;
+        left: inherit;
+        position: relative;
+        z-index: 1;
+    }
+    .brush2-res{
+        max-width: 100%;
+        bottom: 16px;
+        position: relative;
+        z-index: 1;
+        left: inherit;
+    }
+
+}

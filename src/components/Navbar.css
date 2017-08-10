@@ -1,0 +1,43 @@
+.mr-auto-left{
+    margin-left: auto !important;
+}
+
+a.button1 {
+    font: bold 15px Knewave;
+    text-decoration: none;
+    background-color: #F7E32B;
+    color: #333333;
+    padding: 5px 18px 7px 18px;
+}
+
+.gallery-opt{
+    color: black;
+
+}
+
+.logo-style{
+    width: 61px;
+    position: absolute;
+    top: 1px;
+}
+
+@media (max-width: 992px) {
+    .nav-bar-padding1 {
+        padding: 1.5rem 1rem;
+    }
+
+    .nav-toggle-back{
+        background: #F6F6F0;
+    }
+
+    .nav-pad-toggle{
+     padding-top: 55px;
+    }
+}
+@media (max-width: 1280px) {
+    .nav-fix{
+        position: fixed;
+        width: 100%;
+        z-index: 7;
+    }
+}

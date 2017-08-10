@@ -1,0 +1,30 @@
+.contact-padding{
+
+    text-align: left;
+    color: #F6F5F0;;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    padding-left: 100px;
+}
+
+.items{
+    margin-left: 100px ;
+}
+
+.item-style{
+    text-align: left;
+    color: #F6F5F0;;
+}
+.back-contacs{
+    background-color: #36941D;
+    position: relative;
+}
+
+
+
+
+@media (max-width:568px ){
+    .contact-pad{
+        padding-left: 0;
+    }
+}

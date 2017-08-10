@@ -1,0 +1,15 @@
+.align-contact{
+    display: inline-flex;
+    padding-bottom: 8px;
+
+}
+
+.img-color {
+    fill: currentColor;
+}
+
+a{
+    color: #f6f5f0;
+    font-size: 18px;
+    font-family: sans-serif;
+}

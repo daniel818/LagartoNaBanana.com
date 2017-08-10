@@ -1,0 +1,42 @@
+.active {
+    border-bottom-color: #F7E32B;
+    border-left: none;
+    border-right:none;
+    border-top: none;
+    background-color: #2E2929;
+    font-weight: 600;
+
+}
+
+.no-active {
+    border: #2E2929;
+    background-color: #2E2929;
+
+}
+
+button {
+    margin: 19.5px;
+    color: #ffffff;
+}
+
+button:focus {
+    outline: none;
+}
+
+.image-act {
+    padding-top: 18px;
+}
+
+.tabs-font{
+    font-size: small;
+}
+
+
+.container-image{
+    position: relative;
+    max-width:  100%;
+    height: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}

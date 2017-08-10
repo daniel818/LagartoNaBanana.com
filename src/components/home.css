@@ -1,0 +1,46 @@
+.background-home{
+    background-image: url("/images/background.jpg");
+    height: 530px;
+}
+
+.header-align{
+    align-self: center;
+    color: #FFFFFF;
+    padding-left: 230px;
+
+}
+
+.video-div{
+    align-self: center;
+
+}
+
+
+a.button {
+    font: bold 15px Knewave;
+    text-decoration: none;
+    background-color: #F7E32B;
+    color: #333333;
+    padding: 15px 55px 15px 55px;
+}
+
+.div-btn{
+    padding-right: 60px;
+
+}
+
+@media (min-width: 1200px) {
+    .large-video {
+        padding: 100px;
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+    .text-pad {
+        padding-left: 0;
+    }
+
+
+}

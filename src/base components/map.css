@@ -1,0 +1,18 @@
+.map-tab{
+    text-align: left;
+    margin-top: 0px;
+}
+
+.div-container{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #F6F5F0;
+    position: relative;
+
+}
+
+@media (min-width: 768px) and (max-width:990px ){
+    .map-res-padding{
+        padding-top: 50px;
+    }
+}

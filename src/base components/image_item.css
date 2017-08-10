@@ -1,0 +1,67 @@
+.container-slider-item{
+    margin: 0 auto;
+    color: #333;
+    /*background: #F6CD10;*/
+   
+}
+
+.slick-dots{
+    bottom: -40px;
+}
+
+.specs-padding{
+    padding-top: 20px;
+}
+
+.img-respons {
+    max-width: 100%;
+    height: 305px;
+    width: auto;
+}
+
+
+.div-list-items{
+    display: initial;
+    align-items: center;
+    position: relative;
+}
+.p-items {
+    left: 137px;
+    position:absolute;
+    text-align:center;
+    top: 15px;
+    width: 100%;
+    color: white;
+    transform: translate(-50%, -50%);
+
+}
+
+.icon-width{
+    width: 14%;
+}
+
+.color-header{
+    color: #315962;
+}
+
+@media (max-width: 768px) {
+    .img-res-padding-rooms{
+        padding-left: 0;
+    }
+    .img-respons {
+        max-width: 100%;
+        height: 250px;
+        width: auto;
+    }
+}
+
+.slick-slide img{
+    display: initial;
+}
+
+.brush-style{
+    position: absolute;
+    height: auto;
+    top: -22px;
+    max-width: 22%;
+}

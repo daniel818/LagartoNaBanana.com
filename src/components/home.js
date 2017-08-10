@@ -36,7 +36,7 @@ const Home = () =>{
                             <Player
                                 playsInline
                                 poster="/videos/poster.png"
-                                src="/videos/LagartoClipMixed.mov"
+                                src="/videos/LagartoClipMixed.mp4"
                                 fluid='true'
                                 width={320}
                                 height={240}

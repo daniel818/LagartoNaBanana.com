@@ -66,19 +66,19 @@ class About extends Component{
             infinite: true,
             speed: 500,
             autoplay: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 4000,
             slidesToShow: 1,
             slidesToScroll: 1,
-            pauseOnHover: true,
+            pauseOnHover: false,
             fade: true
         };
 
         let aboutStyle={
-            backgroundColor: "#126cfb",
+            backgroundColor: "#1760BE",
             color: "#FFFFFF",
             textAlign: "left",
-            paddingBottom:"70px",
-            paddingTop: "100px",
+            paddingBottom:"0px",
+            paddingTop: "40px",
             position: "relative"
         };
 
@@ -88,7 +88,7 @@ class About extends Component{
            <div className="row" style={aboutStyle}>
 
                <div className="brush">
-                   <img src="/images/icons/brush-blue.png"/>
+                   <img src="/images/icons/brush-blue-new.png"/>
                </div>
 
                <div className="col-sm-12 col-xs-12 col-md-6 about-padding-top">
@@ -112,8 +112,8 @@ class About extends Component{
                   <Slider {...settings} >
                       <div>
                           <Image
-                              brushSrc="images/icons/brush-blue.png"
-                              brush2Src="images/icons/brush-blue.png"
+                              brushSrc="images/icons/brush-blue-new.png"
+                              brush2Src="images/icons/brush-blue-new.png"
                               imgSrc={this.state.images[0].src}
                               className="img-responsive"
                               brushStyle={brushStyle}

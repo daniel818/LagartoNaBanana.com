@@ -74,7 +74,7 @@ const Rooms = () => {
             </div>
 
             <div className="col-12">
-                <Header headerFont="'Knewave', cursive" headerCon="room.header"/>
+                <Header isPadding="true" headerFont="'Knewave', cursive" headerCon="room.header"/>
             </div>
             {imageItem}
         </div>

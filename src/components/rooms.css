@@ -4,3 +4,7 @@
     padding-top: 100px;
     position: relative;
 }
+
+.header-room-fix{
+    padding-bottom: 0px;
+}

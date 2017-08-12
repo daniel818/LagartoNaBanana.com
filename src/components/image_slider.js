@@ -112,18 +112,22 @@ const ImageSlider = () =>{
                 <img src="/images/icons/brush-light-blue.png"/>
             </div>
 
-            <div className="col-12 align-self-center">
+            <div className="col-12 align-self-center" style={{zIndex: "2"}}>
                 <Header headerFont="'Knewave', cursive" headerCon="gallery.header" isPadding="true"/>
             </div>
 
             <div className="col-12 no-gutters">
-                <img className="brushStyle-g brush-res" src="/images/icons/brush-light-blue.png"/>
+                <div className="brush brush-div-fix">
+                <img className="brush-img-fix" src="/images/icons/brush-light-blue.png"/>
+                </div>
 
                 <Slider {...settings}>
                     {image}
                 </Slider>
 
-                <img className="brush2Style-g brush2-res" src="/images/icons/brush-light-blue.png"/>
+                <div className="brush brush-div-fix" style={{top: "272px"}}>
+                <img className="brush-img-fix" src="/images/icons/brush-light-blue.png"/>
+                </div>
             </div>
         </div>
     );

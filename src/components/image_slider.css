@@ -6,7 +6,7 @@
 }
 
 .container-images{
-    padding-bottom: 0px;
+    padding-bottom: 70px;
     padding-top: 36px;
     background-color: #79CFCB;
     position: relative;
@@ -27,6 +27,12 @@
     left: 1px;
     position: relative;
     z-index: 1;
+}
+.brush-div-fix{
+    z-index: 1;
+}
+.brush-img-fix{
+    height: 77px;
 }
 
 

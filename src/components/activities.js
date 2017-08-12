@@ -45,7 +45,7 @@ class Activities extends Component{
                 {
                     index:5,
                     text: "activities.dance",
-                    img: "/images/food.jpg"
+                    img: "/images/dance.jpg"
                 },
                 {
                     index:6,

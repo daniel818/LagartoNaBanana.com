@@ -12,7 +12,7 @@ export default {
         home:{
             header1: "Share.. Learn..",
             header2: "Experience..",
-            button:"Join Us!"
+            button:"Book Now!"
         },
         gallery:{
             header: "Gallery"
@@ -98,7 +98,7 @@ export default {
             pool:"Swimming pool",
             hammock :"Hammock Area",
             wifi:"Free WiFi",
-            share:"Shares Kitchen",
+            share:"Shared Kitchen",
             dance:"Dance Lessons",
             surf:"Surfing Lessons",
             yoga: "Yoga"
@@ -158,7 +158,7 @@ export default {
         home:{
             header1: "Compartir.. Aprender..",
             header2: "Experiencia..",
-            button:"Únetenos!"
+            button:"Reserva Ahora!!"
         },
         gallery:{
             header: "Galería"
@@ -307,7 +307,7 @@ export default {
         home:{
             header1: "Compartilhe.. Aprenda..",
             header2: "Experiencie..",
-            button:"Junte-se a nós!"
+            button:"Reserve Agora!"
         },
         gallery:{
             header: "Galeria"

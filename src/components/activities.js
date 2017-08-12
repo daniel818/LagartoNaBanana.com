@@ -6,6 +6,7 @@ import React,{Component} from 'react';
 import Header from '../base components/header';
 
 import './activities.css';
+import { FormattedMessage } from 'react-intl';
 
 class Activities extends Component{
 
@@ -18,42 +19,42 @@ class Activities extends Component{
             tabs: [
                 {
                     index:0,
-                    text: "Delicious breakfast",
+                    text: "activities.breakfast",
                     img: "/images/food.jpg"
                 },
                 {
                     index:1,
-                    text: "Swimming Pool",
+                    text: "activities.pool",
                     img: "/images/pool.jpg"
                 },
                 {
                     index:2,
-                    text: "Hammock Area",
+                    text: "activities.hammock",
                     img: "/images/hammocks.jpg"
                 },
                 {
                     index:3,
-                    text: "Free WiFi",
+                    text: "activities.wifi",
                     img: "/images/wifi.jpg"
                 },
                 {
                     index:4,
-                    text: "Shared Kitchen",
+                    text: "activities.share",
                     img: "/images/kitchen.jpg"
                 },
                 {
                     index:5,
-                    text: "Dance Classes",
+                    text: "activities.dance",
                     img: "/images/food.jpg"
                 },
                 {
                     index:6,
-                    text: "Surfing Lessons",
+                    text: "activities.surf",
                     img: "/images/surfing.jpg"
                 },
                 {
                     index:7,
-                    text: "Free Yoga",
+                    text: "activities.yoga",
                     img: "/images/yoga-act.jpg"
                 }
             ]
@@ -85,7 +86,9 @@ class Activities extends Component{
 
         const tabs = this.state.tabs.map((tab) =>{
             return <button  key={tab.index} className={this.state.activeTab === tab.index ? "active" : "no-active"}
-                    onClick={()=>this.changeTab(tab.index)}>{tab.text} </button>
+                    onClick={()=>this.changeTab(tab.index)}>
+                <FormattedMessage id={tab.text}/>
+            </button>
         });
 
         const activeTab = this.state.tabs[this.state.activeTab];
@@ -100,7 +103,7 @@ class Activities extends Component{
             </div>
 
             <div className="col">
-            <Header style={headerFix} headerFont="'Knewave', cursive" headerCon="Activities and Facilities"/>
+            <Header style={headerFix} headerFont="'Knewave', cursive" headerCon="activities.header"/>
             </div>
 
             <div className="col-12">

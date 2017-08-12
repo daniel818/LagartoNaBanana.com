@@ -13,20 +13,24 @@ import ImageSlider from '../src/components/image_slider';
 import './App.css';
 
 class App extends Component {
-  render() {
+
+    constructor(props){
+        super(props);
+    }
+
+
+    render() {
     return (
       <div className="App">
-          {/*<Navbar/>*/}
-          {/*<Home/>*/}
-          {/*<ReviewSlider/>*/}
+          <Navbar updateLocale={this.props.updateLocale} />
+          <Home/>
+          <ReviewSlider/>
           <About/>
-          {/*<Activities/>*/}
-          {/*<ImageSlider/>*/}
-          {/*<Map/>*/}
-          {/*<Rooms/>*/}
-          {/*<Contacts/>*/}
-
-
+          <Activities/>
+          <ImageSlider/>
+          <Map/>
+          <Rooms/>
+          <Contacts/>
       </div>
     );
   }

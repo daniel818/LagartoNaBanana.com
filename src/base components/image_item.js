@@ -65,12 +65,7 @@ const ImageItem = (props) => {
     return(
         <div>
 
-            <div className="container-slider-item img-res-padding-rooms">
-                <img className="brushStyle-g brush-res" src="/images/icons/brush-rooms.png"/>
-                <Slider {...settings}>
-                    {imageSlide}
-                 </Slider>
-            </div>
+
 
             <div className="specs-padding">
 
@@ -81,6 +76,12 @@ const ImageItem = (props) => {
 
                 {specs}
 
+            </div>
+            <div className="container-slider-item img-res-padding-rooms">
+                <img className="brushStyle-g brush-res" src="/images/icons/brush-rooms.png"/>
+                <Slider {...settings}>
+                    {imageSlide}
+                </Slider>
             </div>
         </div>
     );

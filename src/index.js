@@ -10,7 +10,7 @@ import {addLocaleData, IntlProvider} from 'react-intl';
 
 import en from 'react-intl/locale-data/en';
 import es from 'react-intl/locale-data/es';
-import fr from 'react-intl/locale-data/fr';
+import pt from 'react-intl/locale-data/pt';
 
 import {flattenMessages}from './utils'
 
@@ -18,42 +18,51 @@ import messages from './messages';
 
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
-//ReactDOM.render(<App />, document.getElementById('root'));
-//registerServiceWorker();
 
-// ReactDOM.render(
-    {/*<BrowserRouter>*/}
-        {/*<Switch>*/}
-            {/*<Route path="/" component={App} />*/}
-        {/*</Switch>*/}
-    {/*</BrowserRouter>, document.getElementById('root'));*/}
-// registerServiceWorker();
+addLocaleData([...en, ...es, ...pt]);
 
-{/*<BrowserRouter>*/}
-    {/*<Switch>*/}
-        {/*<Route path="/" component={App} />*/}
-    {/*</Switch>*/}
-{/*</BrowserRouter>*/}
+let locale = (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage;
 
-addLocaleData([...en, ...es, ...fr]);
+if (!messages[locale]) {
+    locale = "en-US";
+}
 
-let locale = (navigator.languages && navigator.languages[0])
-||navigator.language
-||navigator.userLanguage
-|| 'en-US';
+class LocalizedApp extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            locale,
+            messages: flattenMessages(messages[locale])
+        };
+
+        this.updateLocale = this.updateLocale.bind(this);
+    }
+
+    updateLocale(locale) {
+        this.setState({
+            locale,
+            messages: flattenMessages(messages[locale])
+        })
+    }
+
+
+
+
+    render() {
+        const { locale, messages } = this.state;
+        return (
+                <IntlProvider key={locale} locale={locale} messages={messages}>
+                    <App updateLocale={this.updateLocale}/>
+                </IntlProvider>
+        )
+    }
+}
 
 
 ReactDOM.render(
-
-    <IntlProvider local={locale} messages={flattenMessages(messages[locale])}>
-    <BrowserRouter>
-        <Switch>
-            <Route path="/" component={App} />
-        </Switch>
-    </BrowserRouter>
-
-    </IntlProvider>
-
-        , document.getElementById('root'));
+    <LocalizedApp />
+    , document.getElementById('root')
+);
 
 registerServiceWorker();

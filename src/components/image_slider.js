@@ -113,7 +113,7 @@ const ImageSlider = () =>{
             </div>
 
             <div className="col-12 align-self-center">
-                <Header headerFont="'Knewave', cursive" headerCon="Gallery" isPadding="true"/>
+                <Header headerFont="'Knewave', cursive" headerCon="gallery.header" isPadding="true"/>
             </div>
 
             <div className="col-12 no-gutters">

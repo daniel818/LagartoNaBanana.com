@@ -3,6 +3,7 @@
  */
 
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 
 const Text = (props) =>{
@@ -15,7 +16,9 @@ const Text = (props) =>{
     };
 
     return(
-        <p className={props.className} style={textStyle}>{props.textCon}</p>
+        <p className={props.className} style={textStyle}>
+            <FormattedMessage id={props.textCon} />
+            </p>
     );
 };
 export default Text;

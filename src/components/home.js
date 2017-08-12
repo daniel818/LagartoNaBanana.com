@@ -9,6 +9,7 @@ import Header from '../base components/header';
 
 import './home.css'
 import '../../node_modules/video-react/dist/video-react.css';
+import { FormattedMessage } from 'react-intl';
 
 
 const Home = () =>{
@@ -50,14 +51,16 @@ const Home = () =>{
 
                     <div className="header-align col-xs-12 col-sm-6 text-pad">
 
-                        <div style={styleHead}>
-                            <Header headerFont="Knewave" isfontSize="true" isPadding="true"  headerCon="Good vibes.."/>
-                        </div>
+                        {/*<div style={styleHead}>*/}
+                            <Header headerFont="Knewave" isfontSize="true" isPadding="true"  headerCon="home.header1"/>
+                        {/*</div>*/}
 
-                        <Header headerFont="Knewave" isfontSize="true"  headerCon="Good people.."/>
+                        <Header headerFont="Knewave" isfontSize="true"  headerCon="home.header2"/>
 
                         <div className="div-btn">
-                            <a href="https://reservation.frontdeskmaster.com/?hostelId=55YNdD2BGaOA8NEgg051Y5GjKNtPneSe" className="button">Join The Fun</a>
+                            <a href="https://reservation.frontdeskmaster.com/?hostelId=55YNdD2BGaOA8NEgg051Y5GjKNtPneSe" className="button">
+                                <FormattedMessage id="home.button"/>
+                            </a>
                         </div>
                     </div>
                 {/*</div>*/}

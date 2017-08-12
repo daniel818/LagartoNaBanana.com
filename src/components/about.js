@@ -20,10 +20,8 @@ class About extends Component{
         super(props,intl);
 
         this.state = {
-            header :"About Lagarto",
-            content:  "Just 13 minutes from Pipa's buzzing center and the marvelous Praia do Amor, " +
-            "our sharing community is the ideal place to connect...with nature, yourself, and other " +
-            "adventurous souls in our jungle surroundings.",
+            header :"about.header",
+            content:  "about.description",
             selectedImd: 0,
             images:[
                 {
@@ -40,32 +38,20 @@ class About extends Component{
                 }
             ]
         }
+
+
     }
 
 
 
-    // let images =[
-    //                 {
-    //                     id:0,
-    //                     src:"/images/about_resize.png"
-    //                 },
-    //                 {
-    //                     id:1,
-    //                     src:"/images/menu_.png"
-    //                 },
-    //                 {
-    //                     id:2,
-    //                     src:"/images/secret_sunset.jpg"
-    //                 }
-    //             ];
     render() {
+       const { header } = this.state;
+
         let brushStyle ={
             position: "absolute",
             height: "72px",
             top: "-16px",
         };
-
-
 
         let brush2Style ={
             position: "relative",
@@ -74,27 +60,27 @@ class About extends Component{
             maxWidth:"100%"
         };
 
-       let settings = {
-           arrows:false,
-           dots: false,
-           infinite: true,
-           speed: 500,
-           autoplay: true,
-           autoplaySpeed: 5000,
-           slidesToShow: 1,
-           slidesToScroll: 1,
-           pauseOnHover: true,
-           fade: true
+        let settings = {
+            arrows:false,
+            dots: false,
+            infinite: true,
+            speed: 500,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            pauseOnHover: true,
+            fade: true
         };
 
-       let aboutStyle={
-           backgroundColor: "#126cfb",
-           color: "#FFFFFF",
-           textAlign: "left",
-           paddingBottom:"70px",
-           paddingTop: "100px",
-           position: "relative"
-       };
+        let aboutStyle={
+            backgroundColor: "#126cfb",
+            color: "#FFFFFF",
+            textAlign: "left",
+            paddingBottom:"70px",
+            paddingTop: "100px",
+            position: "relative"
+        };
 
        return (
 
@@ -106,7 +92,12 @@ class About extends Component{
                </div>
 
                <div className="col-sm-12 col-xs-12 col-md-6 about-padding-top">
-                   <Header headerFont="'Knewave', cursive" headerCon={<FormattedMessage id='about.header' />} marginLeft="14%"/>
+
+                   <Header
+                       headerFont="'Knewave', cursive"
+                       headerCon={header}
+                       marginLeft="14%"
+                   />
 
                    <div className="text-about">
                    <Text textSize={16} textCon={this.state.content}/>
@@ -154,3 +145,4 @@ class About extends Component{
 
 
 export default About;
+

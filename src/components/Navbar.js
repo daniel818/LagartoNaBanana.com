@@ -6,8 +6,9 @@ import React from 'react';
 import Link from '../base components/link';
 
 import './Navbar.css';
+import { FormattedMessage } from 'react-intl';
 
-const Navbar =() =>{
+const Navbar =(props) =>{
     return(
 
         <nav style={{backgroundImage: "url(images/icons/brush-bright.png",
@@ -17,7 +18,7 @@ const Navbar =() =>{
             </button>
 
             <a className="navbar-brand" href="#">
-                <img className="logo-style" src="/images/icons/logo.png"/>
+                <img className="logo-style logo-res" src="/images/icons/logo.png"/>
             </a>
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -25,17 +26,19 @@ const Navbar =() =>{
                 <ul className="navbar-nav mr-auto-left nav-pad-toggle">
 
                     <li className="nav-item">
-                        <Link className="nav-link" to="/en" src="/images/icons/england.png"/>
+                        <Link className="nav-link" onClick={() => props.updateLocale("en-US")} src="/images/icons/england.png"/>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/sp" src="/images/icons/sain flaf.png"/>
+                        <Link className="nav-link" onClick={() => props.updateLocale("es-ES")}   src="/images/icons/sain flaf.png"/>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/pt"  src="/images/icons/brazil flag.png"/>
+                        <Link className="nav-link" onClick={() => props.updateLocale("pt-PT")}   src="/images/icons/brazil flag.png"/>
                     </li>
 
                     <li className="nav-item" >
-                        <a style={{color: "#000000"}} href="https://reservation.frontdeskmaster.com/?hostelId=55YNdD2BGaOA8NEgg051Y5GjKNtPneSe" className="button1 nav-link">Join The Fun</a>
+                        <a style={{color: "#000000"}} href="https://reservation.frontdeskmaster.com/?hostelId=55YNdD2BGaOA8NEgg051Y5GjKNtPneSe" className="button1 nav-link">
+                            <FormattedMessage id="home.button"/>
+                        </a>
                     </li>
                 </ul>
 

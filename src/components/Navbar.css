@@ -41,3 +41,8 @@ a.button1 {
         z-index: 7;
     }
 }
+@media (max-width: 768px) {
+    .logo-res {
+        width: 38px;
+    }
+}

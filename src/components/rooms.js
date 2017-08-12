@@ -12,11 +12,11 @@ const Rooms = () => {
     let roomsDetail =[
         {
 
-            roomType : "Dorms",
-            roomSpecs: ['4 People per room ' ,
-                       'Mixed Dorms' ,
-                       'Fan' ,
-                       'Private Bathroom and Shower'],
+            roomType : "room.dorms.header",
+            roomSpecs: ['room.dorms.people' ,
+                       'room.dorms.what' ,
+                       'room.dorms.fan' ,
+                       'room.dorms.shower'],
             images:
                 [
                     '/images/rooms/dorms.jpg',
@@ -32,11 +32,11 @@ const Rooms = () => {
                 ]
         },
         {
-            roomType : "Private Rooms",
-            roomSpecs: ['2 People',
-                       'Private Balcony & Hammock',
-                       'Fan',
-                       'Personal Bathroom and Shower'],
+            roomType : "room.private.header",
+            roomSpecs: ['room.private.people',
+                       'room.private.what',
+                       'room.private.fan',
+                       'room.private.shower'],
             images:
                 [
                     '/images/rooms/room.jpg',
@@ -74,7 +74,7 @@ const Rooms = () => {
             </div>
 
             <div className="col-12">
-                <Header headerFont="'Knewave', cursive" headerCon="Rooms"/>
+                <Header headerFont="'Knewave', cursive" headerCon="room.header"/>
             </div>
             {imageItem}
         </div>

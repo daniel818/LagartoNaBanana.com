@@ -6,6 +6,7 @@
  */
 
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 
 const Header = (props) =>{
@@ -18,8 +19,11 @@ const Header = (props) =>{
     };
 
     return(
-        <h2 className={props.className} style={headStyle}>{props.headerCon}</h2>
+        <h2 className={props.className} style={headStyle}>
+            <FormattedMessage id={props.headerCon} />
+        </h2>
     );
 };
+
 
 export default Header;

@@ -11,9 +11,9 @@ const Link =(props) =>{
 
     return(
 
-            <RouterLink style={props.style} className={props.className} to={props.to} >{props.name}
+            <div style={props.style} className={props.className} onClick={props.onClick} >{props.name}
                 <img src={props.src}/>
-            </RouterLink>
+            </div>
 
     );
 };

@@ -43,3 +43,10 @@ a.button {
 
 
 }
+@media (max-width: 510px) {
+    .brush-review-fix {
+        top: -6px;;
+    }
+
+
+}

@@ -60,7 +60,7 @@ const ReviewSlider = () =>{
 
         <div className="row" style={reviewStyle}>
 
-            <div className="brush">
+            <div style={{top: "-6px"}} className="brush">
                 <img src="/images/icons/brush-black.png"/>
             </div>
 

@@ -28,8 +28,8 @@ class App extends Component {
           <About/>
           <Activities/>
           <ImageSlider/>
-          <Map/>
           <Rooms/>
+          <Map/>
           <Contacts/>
       </div>
     );

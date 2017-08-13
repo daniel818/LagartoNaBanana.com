@@ -12,7 +12,7 @@ export default {
         home:{
             header1: "Share.. Learn..",
             header2: "Experience..",
-            button:"Book Now!"
+            button:"Book Now  "
         },
         gallery:{
             header: "Gallery"
@@ -157,8 +157,8 @@ export default {
         },
         home:{
             header1: "Compartir.. Aprender..",
-            header2: "Experiencia..",
-            button:"Reserva Ahora!!"
+            header2: "Experimentar..",
+            button:"Reserva Ahora  "
         },
         gallery:{
             header: "Galería"
@@ -300,14 +300,14 @@ export default {
     'pt-PT':{
         about: {
             header: "Sobre Lagarto",
-            description:"Estamos somente a 13 minutos do Centro de Pipa e da incrível Praia do Amor. " +
+            description:"Estamos somente a 13 minutos do Centro e da incrível Praia do Amor. " +
             "Nosso espaço comunitário é o lugar ideal para você se conectar consigo mesmo, com a natureza e " +
             "também com outros aventureiros."
         },
         home:{
             header1: "Compartilhe.. Aprenda..",
-            header2: "Experiencie..",
-            button:"Reserve Agora!"
+            header2: "Experimente..",
+            button:"Reserve Agora  "
         },
         gallery:{
             header: "Galeria"
@@ -390,7 +390,7 @@ export default {
             wifi:" WiFi gratuito",
             share:"Cozinha compartilhada",
             dance:" Aulas de dança",
-            surf:"Clases de baile",
+            surf:"Aulas de surf",
             yoga: "Ioga"
         },
         directions:{

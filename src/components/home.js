@@ -60,6 +60,7 @@ const Home = () =>{
                         <div className="div-btn">
                             <a href="https://reservation.frontdeskmaster.com/?hostelId=55YNdD2BGaOA8NEgg051Y5GjKNtPneSe" className="button">
                                 <FormattedMessage id="home.button"/>
+                                <img className="monk-size" src="/images/icons/monk.png" />
                             </a>
                         </div>
                     </div>

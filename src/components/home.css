@@ -24,9 +24,8 @@ a.button {
     padding: 15px 55px 15px 55px;
 }
 
-.div-btn{
-    padding-right: 60px;
-
+.monk-size{
+    max-width: 10%;
 }
 
 @media (min-width: 1200px) {

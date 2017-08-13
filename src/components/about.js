@@ -122,8 +122,8 @@ class About extends Component{
                       </div>
                       <div>
                           <Image
-                              brushSrc="images/icons/brush-blue.png"
-                              brush2Src="images/icons/brush-blue.png"
+                              brushSrc="images/icons/brush-blue-new.png"
+                              brush2Src="images/icons/brush-blue-new.png"
                               imgSrc={this.state.images[1].src}
                               className="img-responsive"
                               brushStyle={brushStyle}

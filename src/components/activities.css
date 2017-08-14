@@ -8,9 +8,26 @@
 
 }
 
+.active-category {
+    border-bottom-color: #2bff6d;
+    border-left: none;
+    border-right:none;
+    border-top: none;
+    background-color: #2E2929;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
 .no-active {
     border: #2E2929;
     background-color: #2E2929;
+
+}
+.no-active-category {
+    border: #2E2929;
+    background-color: #2E2929;
+    font-size: 20px;
 
 }
 

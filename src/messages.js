@@ -7,7 +7,7 @@ export default {
             header: "About Lagarto",
             description: "Just 13 minutes from Pipa's buzzing center and the marvelous Praia do Amor, " +
             "our sharing community is the ideal place to connect...with nature, yourself, and other " +
-            "adventurous souls in our jungle surroundings."
+            "adventurous travelers in our jungle surroundings."
         },
         home:{
             header1: "Share.. Learn..",
@@ -73,11 +73,11 @@ export default {
                 name:"Owen Rouse, Brazil"
             },
             review9:{
-                text:`"This hostel is one of a kind! The staff was phenomenal, nightly ' +
+                text:'"This hostel is one of a kind! The staff was phenomenal, nightly ' +
                 'vegetarian dinners delicious, morning yoga class refreshing. Within 20 minutes ' +
                 'of arriving the staff made me feel like part of the family! They were always hanging out, ' +
-                'dancing, playing games. The hostel is a short walk from the beaches and shops but I didn't mind it because 
-                there were always people to do it with. I had planned to stay 2 nights and ended up staying a week!!"`,
+                'dancing, playing games. The hostel is a short walk from the beaches and shops but I didnt mind it because' +
+                'there were always people to do it with. I had planned to stay 2 nights and ended up staying a week!!"',
                 img:"/images/review_profiles/sally.jpg",
                 name:"Sally Charness, USA"
             },
@@ -94,21 +94,36 @@ export default {
         },
         activities: {
             header:"Activities and Facilities",
+            categoryAct: "Activities",
+            categoryFact: "Facilities",
+            and: "and",
             breakfast:"Breakfast",
+            dinner:"Dinner Vegetarian",
+            dance:"Dance Lessons",
+            surf:"Surfing Lessons",
+            sound: "Sound Healing",
+            med:"Meditation",
+            yoga: "Yoga"
+
+        },
+        facilities: {
+            header:"Activities and Facilities",
+
             pool:"Swimming pool",
             hammock :"Hammock Area",
             wifi:"Free WiFi",
             share:"Shared Kitchen",
-            dance:"Dance Lessons",
-            surf:"Surfing Lessons",
-            yoga: "Yoga"
+            area:"Common Area",
+            bbq:"BBQ",
+            bar :"Bar",
+
         },
         directions:{
             header:"Getting Here",
             header2:"From Natal airport....",
             uber:{
                 type:"Uber",
-                how:"R$120-R$150"
+                how:"R$120-R$150 - Takes about 1h30 min."
             },
             taxi:{
                 type:"Taxi",
@@ -120,7 +135,7 @@ export default {
                 "Transfer stand which regularly provides shuttles to and from Pipa."
             },
             bus:{
-                type:" From Natal Centre -  Bus ",
+                type:" From Natal Center/Bus Station ",
                 how:" R$15 – Buses regularly leave between 6am and 6pm with " +
                 "reduced hours on Sundays. Buses are leaving from central station of " +
                 "Natal (Rodoviia) or from Ponta Negra close to Natal shopping centre."
@@ -156,9 +171,10 @@ export default {
             "con la naturaleza, contigo mismo y con otros viajeros aventureros en nuestro hogar/paraíso rodeado de selva."
         },
         home:{
-            header1: "Compartir.. Aprender..",
-            header2: "Experimentar..",
-            button:"Reserva Ahora  "
+
+            header1: "Comparte.. Aprende..",
+            header2: "Experimente..",
+            button:"Reservar Ahora  "
         },
         gallery:{
             header: "Galería"
@@ -222,7 +238,7 @@ export default {
             review8:{
 
 
-                text:'"La gente te hace sentir como en familia � ya espero volver de nuevo. Saudades!"',
+                text:'"La gente te hace sentir como en familia  ya espero volver de nuevo. Saudades!"',
                 img:"/images/review_profiles/caro.jpg",
                 name:"Caro Muñoz Guerra, Chile"
             },
@@ -240,35 +256,48 @@ export default {
             },
         },
         activities: {
-            header:"Actividades e instalaciones",
+            header:"Actividades e Instalaciones",
+            categoryAct: "Actividades",
+            categoryFact: "Instalaciones",
+            and: "e",
             breakfast:"Desayuno",
+            dinner:"Cena Vegetariana",
+            dance:"Clases de Baile",
+            surf:"Clases de Surf",
+            sound: "Sound Healing",
+            med:"Meditación",
+            yoga: "Yoga"
+        },
+        facilities: {
+            header:"Actividades e instalaciones",
+
             pool:"Piscina",
             hammock :"Área de hamacas",
             wifi:" WiFi gratis",
             share:"Cocina compartida",
-            dance:"Dance Lessons",
-            surf:"Clases de baile",
-            yoga: "Yoga"
+            bar: "Bar",
+            area: "Área común",
+            bbq: "Parrilla"
         },
         directions:{
             header:"Cómo llegar",
             header2:"Desde el aeropuerto de Natal...",
             uber:{
                 type:"Uber",
-                how:"R$120-R$150"
+                how:"R$120-R$150 - Tarda alrededor de 1 hora y media."
             },
             taxi:{
                 type:"Taxi",
                 how:"R$160-R$180. Tarda alrededor de 1 hora y media."
             },
             shuttle:{
-                type:"Shuttle",
+                type:"Transfer",
                 how:"R$50 - A la derecha de la salida tras recoger el equipaje está el " +
                 "puesto de VIP Transfer, empresa que ofrece servicio de transfer de Natal a " +
                 "Pipa y de Pipa a Natal con regularidad"
             },
             bus:{
-                type:" Desde el centro de Natal -  Bus ",
+                type:" Desde el centro de Natal/Estación de Autobuses ",
                 how:"R$15. Los buses salen con regularidad de 6:00 a 18:00 " +
                 "(los domingos tienen horarios reducidos) desde la estación central de Natal " +
                 "(Rodoviária) o desde Ponta Negra, cerca del centro comercial Natal Shopping."
@@ -384,21 +413,35 @@ export default {
         },
         activities: {
             header:"Actividades e instalações",
+            categoryAct: "Atividades",
+            categoryFact: "Instalações",
+            and: "e",
             breakfast:"Café da manhã",
-            pool:"Piscina",
-            hammock :"Redário",
-            wifi:" WiFi gratuito",
-            share:"Cozinha compartilhada",
-            dance:" Aulas de dança",
+            dinner:"Jantar Vegetariano",
             surf:"Aulas de surf",
-            yoga: "Ioga"
+            dance:"Aulas de dança",
+            sound: "Sound Healing",
+            med:"Meditação",
+            yoga: "Yoga"
+
+        },
+        facilities: {
+            header:"Actividades e instalações",
+            pool:"Piscina",
+            hammock :"Área de rede",
+            wifi:"Free WiFi",
+            share:"Cozinha Compartilhada",
+            area:"Área Comum",
+            bbq:"Churrasqueira",
+            bar :"Bar"
+
         },
         directions:{
             header:"Como chegar",
             header2:"Do aeroporto de Natal...",
             uber:{
                 type:"Uber",
-                how:"R$120-R$150"
+                how:"R$120-R$150 - A viagem em carro particular demora por volta de 1h30."
             },
             taxi:{
                 type:"Taxi",
@@ -410,7 +453,7 @@ export default {
                 " retirada de bagagens. Eles oferecem vans diárias para Pipa."
             },
             bus:{
-                type:" Do Natal Centre -  Ônibus",
+                type:" Do Natal Centre/Estação de Ônibus",
                 how:" R$15 – Os ônibus saem regularmente entre 6h e " +
                 "18h de segunda a sábado, sendo que aos domingos os horários são " +
                 "reduzidos. Os ônibus partem da rodoviária, mas também é possível pegar " +
@@ -424,21 +467,21 @@ export default {
                 header:"Dormitórios",
                 people:"4 pessoas por quarto",
                 what:'Quartos mistos',
-                shower:'Casa de banho privada',
+                shower:'Banheiro privado',
                 fan:'Ventilador'
             },
             private:{
 
 
-                header:"Salas privadas",
+                header:"Quartos privados",
                 people:"2 pessoas",
                 what:'Varanda privada e Rede',
-                shower:"Casa de banho privada",
+                shower:"Banheiro privado",
                 fan:'Ventilador'
             }
         },
         contact:{
-            header:"Contáctenos"
+            header:"Fale Conosco"
         }
 
     }

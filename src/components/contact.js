@@ -106,7 +106,7 @@ const Contact = () => {
 
 
 
-                <div className="col-12 item-style" style={{paddingTop: "112px"}}>
+                <div className="col-12 item-style1" style={{paddingTop: "112px"}}>
                     <Header headerFont="'Knewave', cursive" headerCon="contact.header" />
                 </div>
 

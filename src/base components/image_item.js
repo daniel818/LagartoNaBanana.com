@@ -51,7 +51,7 @@ const ImageItem = (props) => {
 
     let settings = {
         arrows: false,
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         autoplay: false,

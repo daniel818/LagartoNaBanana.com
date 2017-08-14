@@ -34,6 +34,31 @@ const ReviewSlider = () =>{
             profileImage: "reviews.review5.img",
             details: "reviews.review5.name"
         },
+        {
+            review: "reviews.review6.text",
+            profileImage: "reviews.review6.img",
+            details: "reviews.review6.name"
+        },
+        {
+            review: "reviews.review7.text",
+            profileImage: "reviews.review7.img",
+            details: "reviews.review7.name"
+        },
+        {
+            review: "reviews.review8.text",
+            profileImage: "reviews.review8.img",
+            details: "reviews.review8.name"
+        },
+        {
+            review: "reviews.review9.text",
+            profileImage: "reviews.review9.img",
+            details: "reviews.review9.name"
+        },
+        {
+            review: "reviews.review10.text",
+            profileImage: "reviews.review10.img",
+            details: "reviews.review10.name"
+        }
     ];
 
     const reviewItemGen = reviewItem.map((review)=>{
@@ -68,7 +93,7 @@ const ReviewSlider = () =>{
                 <div className="carousel-inner" role="listbox">
 
                     <div className="carousel-item active">
-                        <ReviewItem className="col" reviewItem={reviewItem[0]}/>
+                        <ReviewItem className="col" reviewItem={reviewItem[8]}/>
                     </div>
 
                     {reviewItemGen}

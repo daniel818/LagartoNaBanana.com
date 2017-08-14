@@ -19,7 +19,7 @@ const ReviewItem = (props) =>{
     };
 
     const imgs =  <FormattedMessage id={props.reviewItem.profileImage}/>
-    console.log(imgs);
+
     return(
         <div className={props.className} style={reviewItemStyle}>
 

@@ -26,16 +26,25 @@ class About extends Component{
             images:[
                 {
                     id:0,
-                    src:"/images/about_resize.png"
+                    src:"/images/about/aboutlagarto1.png"
                 },
                 {
                     id:1,
-                    src:"/images/menu_.png"
+                    src:"/images/about/aboutlagarto2.png"
                 },
                 {
                     id:2,
-                    src:"/images/secret_sunset.jpg"
-                }
+                    src:"/images/about/aboutlagarto3.png"
+                },
+                {
+                    id:3,
+                    src:"/images/about/aboutlagarto4.png"
+                },
+                {
+                    id:4,
+                    src:"/images/about/aboutlagarto5.png"
+                },
+
             ]
         }
 
@@ -130,6 +139,37 @@ class About extends Component{
                               brush2Style={brush2Style}
                           />
                       </div>
+                      <div>
+                          <Image
+                              brushSrc="images/icons/brush-blue-new.png"
+                              brush2Src="images/icons/brush-blue-new.png"
+                              imgSrc={this.state.images[2].src}
+                              className="img-responsive"
+                              brushStyle={brushStyle}
+                              brush2Style={brush2Style}
+                          />
+                      </div>
+                      <div>
+                          <Image
+                              brushSrc="images/icons/brush-blue-new.png"
+                              brush2Src="images/icons/brush-blue-new.png"
+                              imgSrc={this.state.images[3].src}
+                              className="img-responsive"
+                              brushStyle={brushStyle}
+                              brush2Style={brush2Style}
+                          />
+                      </div>
+                      <div>
+                          <Image
+                              brushSrc="images/icons/brush-blue-new.png"
+                              brush2Src="images/icons/brush-blue-new.png"
+                              imgSrc={this.state.images[4].src}
+                              className="img-responsive"
+                              brushStyle={brushStyle}
+                              brush2Style={brush2Style}
+                          />
+                      </div>
+
                   </Slider>
 
                    </div>

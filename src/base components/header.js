@@ -19,9 +19,9 @@ const Header = (props) =>{
     };
 
     return(
-        <h2 className={props.className} style={headStyle}>
+        <h1 className={props.className} style={headStyle}>
             <FormattedMessage id={props.headerCon} />
-        </h2>
+        </h1>
     );
 };
 

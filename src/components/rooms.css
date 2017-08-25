@@ -8,3 +8,35 @@
 .header-room-fix{
     padding-bottom: 0px;
 }
+
+.no-active-room {
+    border: #ffefae;
+    background-color: #ffefae;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    font-family: Englebert, sans-serif;
+    margin: 23px;
+}
+
+.active-room {
+    border-bottom-color: #6EE3FE;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color: #ffefae;
+    font-weight: bold;
+    color: black;
+    font-family: Englebert, sans-serif;
+    font-size: 18px;
+    margin: 23px;
+
+}
+
+.cost{
+    color: #128a0c;
+    font-style: italic;
+    font-family: Englebert, cursive;
+    font-weight: inherit;
+    font-size: 23px;
+}

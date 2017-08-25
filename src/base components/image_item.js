@@ -20,14 +20,11 @@ const ImageItem = (props) => {
         top: "-16px",
     };
 
-
-
     let brush2Style ={
         position: "relative",
         height: "72px",
         bottom: "50px"
     };
-
     const specs = props.text.map((text) => {
         return (
             <div className="col-xl-6 div-list-items">
@@ -37,12 +34,11 @@ const ImageItem = (props) => {
         );
 
     });
-
     const imageSlide = props.images.map((image) =>{
         return(
         <div>
             <Image
-                imgSrc={image}
+                imgSrc={"/images/rooms/"+props.name +"/"+ props.name +"-"+ image +".jpg"}
                 className="img-respons"
             />
         </div>
@@ -50,7 +46,7 @@ const ImageItem = (props) => {
     });
 
     let settings = {
-        arrows: false,
+        arrows: true,
         dots: false,
         infinite: true,
         speed: 500,
@@ -64,20 +60,11 @@ const ImageItem = (props) => {
 
     return(
         <div>
-
-
-
             <div className="specs-padding">
-
-                <div >
-                    <img src="/images/monkey-item.png"/>
-                    <Header className="color-header" headerFont="Knewave" headerCon={props.header}/>
-                </div>
-
                 {specs}
-
             </div>
-            <div className="container-slider-item img-res-padding-rooms">
+
+            <div className=" col-md-6  container-slider-item img-res-padding-rooms">
                 <img className="brushStyle-g brush-res" src="/images/icons/brush-rooms.png"/>
                 <Slider {...settings}>
                     {imageSlide}

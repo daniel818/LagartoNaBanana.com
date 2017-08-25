@@ -46,3 +46,12 @@ a.button1 {
         width: 38px;
     }
 }
+
+@media (min-width: 1280px) {
+    .nav-fix1 {
+        position: fixed;
+        width: 1281px;
+        z-index: 5;
+
+    }
+}

@@ -7,6 +7,7 @@ import Header from '../base components/header';
 
 import './activities.css';
 import { FormattedMessage } from 'react-intl';
+import Text from "../base components/text";
 
 class Activities extends Component{
 
@@ -21,34 +22,39 @@ class Activities extends Component{
                 {
                     index:0,
                     text: "activities.breakfast",
-                    img: "/images/active/breakfast.jpg"
+                    img: "/images/active/breakfast.jpg",
+                    include: "activities.include"
 
                 },
                 {
                     index:1,
-                    text: "activities.dinner",
-                    img: "/images/active/vegdinner.jpg"
+                    text: "activities.med",
+                    img: "/images/active/meditation.jpg",
+                    include: "activities.include"
                 },
-
                 {
                     index:2,
-                    text: "activities.med",
-                    img: "/images/active/meditation.jpg"
+                    text: "activities.dance",
+                    img: "/images/active/dance.jpg",
+                    include: "activities.include"
                 },
                 {
                     index:3,
-                    text: "activities.dance",
-                    img: "/images/active/dance.jpg"
+                    text: "activities.yoga",
+                    img: "/images/active/yoga.jpg",
+                    include: "activities.include"
                 },
                 {
                     index:4,
                     text: "activities.surf",
-                    img: "/images/active/surfing.jpg"
+                    img: "/images/active/surfing.jpg",
+                    include: "facilities.include"
                 },
                 {
                     index:5,
-                    text: "activities.yoga",
-                    img: "/images/active/yoga.jpg"
+                    text: "activities.dinner",
+                    img: "/images/active/vegdinner.jpg",
+                    include: "facilities.include"
                 }
             ],
             tabsFacilities: [
@@ -56,37 +62,46 @@ class Activities extends Component{
                 {
                     index:0,
                     text: "facilities.pool",
-                    img: "/images/facilities/swimingpool.jpg"
+                    img: "/images/facilities/swimingpool.jpg",
+                    include: "facilities.include"
                 },
                 {
                     index:1,
                     text: "facilities.hammock",
-                    img: "/images/facilities/hammockarea.jpg"
+                    img: "/images/facilities/hammockarea.jpg",
+                    include: "facilities.include"
                 },
                 {
                     index:2,
                     text: "facilities.wifi",
-                    img: "/images/facilities/wifi.jpg"
+                    img: "/images/facilities/wifi.jpg",
+                    include: "facilities.include"
                 },
                 {
                     index:3,
                     text: "facilities.share",
-                    img: "/images/facilities/sharedkitchen.jpg"
+                    img: "/images/facilities/sharedkitchen.jpg",
+                    include: "facilities.include"
                 },
                 {
                     index:4,
                     text: "facilities.area",
-                    img: "/images/facilities/batlounge.jpg"
+                    img: "/images/facilities/batlounge.jpg",
+                    include: "facilities.include"
                 },
                 {
                     index:5,
                     text: "facilities.bar",
-                    img: "/images/facilities/bar.jpg"
+                    img: "/images/facilities/bar.jpg",
+                    include: "facilities.include"
+
                 },
                 {
                     index:6,
                     text: "facilities.bbq",
-                    img: "/images/facilities/bar.jpg"
+                    img: "/images/facilities/bar.jpg",
+                    include: "facilities.include"
+
 
                 }
             ],
@@ -110,40 +125,42 @@ class Activities extends Component{
                 {
                     index:0,
                     text: "activities.breakfast",
-                    img: "/images/active/breakfast.jpg"
+                    img: "/images/active/breakfast.jpg",
+                    include: "activities.include"
 
                 },
                 {
                     index:1,
-                    text: "activities.dinner",
-                    img: "/images/active/vegdinner.jpg"
+                    text: "activities.med",
+                    img: "/images/active/meditation.jpg",
+                    include: "activities.include"
                 },
-
                 {
                     index:2,
-                    text: "activities.med",
-                    img: "/images/active/meditation.jpg"
+                    text: "activities.dance",
+                    img: "/images/active/dance.jpg",
+                    include: "activities.include"
                 },
                 {
                     index:3,
-                    text: "activities.dance",
-                    img: "/images/active/dance.jpg"
+                    text: "activities.yoga",
+                    img: "/images/active/yoga.jpg",
+                    include: "activities.include"
                 },
                 {
                     index:4,
                     text: "activities.surf",
-                    img: "/images/active/surfing.jpg"
+                    img: "/images/active/surfing.jpg",
+                    include: "facilities.include"
                 },
                 {
                     index:5,
-                    text: "activities.yoga",
-                    img: "/images/active/yoga.jpg"
+                    text: "activities.dinner",
+                    img: "/images/active/vegdinner.jpg",
+                    include: "facilities.include"
                 },
-                {
-                    index:6,
-                    text: "activities.sound",
-                    img: "/images/active/yoga.jpg"
-                }
+
+
             ],
             header: "activities.header",
             activeBtn: 1
@@ -175,10 +192,12 @@ class Activities extends Component{
         };
 
         const tabs = this.state.tabsActivities.map((tab) =>{
-            return <button  key={tab.index} className={this.state.activeTab === tab.index ? "active" : "no-active"}
+            return(<button  key={tab.index} className={this.state.activeTab === tab.index ? "active" : "no-active"}
                     onClick={()=>this.changeTab(tab.index)}>
                 <FormattedMessage id={tab.text}/>
-            </button>
+                <Text className="include"textSize={15} isBold="true" textCon={tab.include} isEnglebert="true"/>
+
+            </button>);
         });
 
         const activeTab = this.state.tabsActivities[this.state.activeTab];

@@ -1,6 +1,7 @@
 .background-home{
-    background-image: url("/images/background.jpg");
-    height: 530px;
+    background-image: url("/images/cover.jpg");
+    height: 580px;
+    background-size: cover;
 }
 
 .header-align{
@@ -46,6 +47,13 @@ a.button {
 @media (max-width: 510px) {
     .brush-review-fix {
         top: -6px;;
+    }
+
+
+}
+@media (max-width: 576px) {
+    .large-video1 {
+        padding-top: 60px;
     }
 
 

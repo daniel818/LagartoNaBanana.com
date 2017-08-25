@@ -37,18 +37,42 @@ const Rooms = () => {
                        'room.private.what',
                        'room.private.fan',
                        'room.private.shower'],
-            images:
-                [
-                    '/images/rooms/room.jpg',
-                    '/images/rooms/bathroom_private.jpg',
-                    '/images/rooms/outside_private.jpg',
-                    '/images/rooms/bathroom_solo.jpg',
-                    '/images/rooms/bedroom2_solo.jpg',
-                    '/images/rooms/bedroom_solo.jpg',
-                    '/images/rooms/shower_solo.jpg',
-                    '/images/rooms/toilet_solo.jpg'
+            images:[
+                '/images/rooms/room.jpg',
+                '/images/rooms/bathroom_private.jpg',
+                '/images/rooms/outside_private.jpg',
+                '/images/rooms/bathroom_solo.jpg',
+                '/images/rooms/bedroom2_solo.jpg',
+                '/images/rooms/bedroom_solo.jpg',
+                '/images/rooms/shower_solo.jpg',
+                '/images/rooms/toilet_solo.jpg'
+            ]
+
+        },
+        {
+            roomType : "room.privateTwins.header",
+            roomSpecs: ['room.privateTwins.people',
+                'room.privateTwins.what',
+                'room.privateTwins.fan',
+                'room.privateTwins.shower'],
+            images:[
+                '/images/rooms/twin-bed.jpeg',
             ]
         },
+        {
+            roomType : "room.camping.header",
+            roomSpecs: ['room.camping.people' ,
+                'room.camping.what' ,
+                'room.camping.bath' ,
+                'room.camping.shower'],
+            images:
+                [
+                    '/images/rooms/cam.png',
+                    '/images/rooms/cam-area.jpeg'
+
+                ]
+        }
+
     ];
 
 
@@ -77,6 +101,7 @@ const Rooms = () => {
                 <Header isPadding="true" headerFont="'Knewave', cursive" headerCon="room.header"/>
             </div>
             {imageItem}
+
         </div>
 
 

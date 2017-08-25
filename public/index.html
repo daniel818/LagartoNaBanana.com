@@ -29,8 +29,61 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Lagarto Na Banana</title>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-101371483-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});let f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T8DQVDF');</script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
+
+  <script>
+      window.fbAsyncInit = function() {
+          FB.init({
+              appId            : '494972810887506',
+              autoLogAppEvents : true,
+              xfbml            : true,
+              version          : 'v2.10'
+          });
+          FB.api(
+              '/332056397135906?fields=access_token',
+              'GET',
+              function(response) {
+                  console.log(response);
+              }
+          );
+
+          FB.api(
+              '/332056397135906/photos',
+              'GET',
+              {"pretty":"0","type":"uploaded","limit":"50","before":"NTAyNTU5NTQ2NzUyMjU2"},
+              function(response) {
+                  console.log(response);
+              }
+          );
+          FB.AppEvents.logPageView();
+      };
+
+      (function(d, s, id){
+          let js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {return;}
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+  </script>
     <h1 style="position: absolute; text-indent: -2000px">Lagarto Ba Banana</h1>
     <noscript>
       You need to enable JavaScript to run this app.

@@ -58,12 +58,22 @@ const ImageSlider = () =>{
 
 
     ];
+    let imgGeneral = [1,2,3,4,5,6,7,8,9,10,11,12,13,14];
 
     const createSrc = imgSrcs.map((src) => {
         return `/images/gallery/${src.src}.jpg`
     });
+    const createSrcGeneral = imgGeneral.map((src) => {
+        return `/images/general/general-${src}.jpg`
+    });
 
     const image = createSrc.map((image)=>{
+        return(
+            <div><img className="img-slider-container" src={image} /></div>
+
+        );
+    });
+    const imageGeneral = createSrcGeneral.map((image)=>{
         return(
             <div><img className="img-slider-container" src={image} /></div>
 
@@ -104,9 +114,9 @@ const ImageSlider = () =>{
                 }
             }]
     };
+
     return(
         <div className="row container-images">
-
 
             <div className="brush">
                 <img src="/images/icons/brush-light-blue.png"/>
@@ -122,6 +132,7 @@ const ImageSlider = () =>{
                 </div>
 
                 <Slider {...settings}>
+                    {imageGeneral}
                     {image}
                 </Slider>
 

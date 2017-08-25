@@ -4,7 +4,7 @@
 export default {
     'en-US':{
         about: {
-            header: "About Lagarto",
+            header: "About Lagarto Na Banana",
             description: "Just 13 minutes from Pipa's buzzing center and the marvelous Praia do Amor, " +
             "our sharing community is the ideal place to connect...with nature, yourself, and other " +
             "adventurous travelers in our jungle surroundings."
@@ -97,11 +97,11 @@ export default {
             categoryAct: "Activities",
             categoryFact: "Facilities",
             and: "and",
+            include: " Included",
             breakfast:"Breakfast",
-            dinner:"Dinner Vegetarian",
+            dinner:"Vegetarian Dinner",
             dance:"Dance Lessons",
             surf:"Surfing Lessons",
-            sound: "Sound Healing",
             med:"Meditation",
             yoga: "Yoga"
 
@@ -116,6 +116,7 @@ export default {
             area:"Common Area",
             bbq:"BBQ",
             bar :"Bar",
+            include: " ",
 
         },
         directions:{
@@ -143,19 +144,44 @@ export default {
         },
         room:{
             header:"Rooms",
+            free: "Free Breakfast and Yoga",
             dorms:{
                 header:"Dorms",
                 people:"4 People per room",
                 what:'Mixed Dorms',
                 shower:'Private Bathroom and Shower',
-                fan:'Fan'
+                fan:'Fan',
+                cost: "From 35R$"
+
             },
             private:{
-                header:"Private Rooms",
+                header:"Private Room",
+                include:"Double bed",
                 people:"2 People",
                 what:'Private Balcony & Hammock',
                 shower:"Personal Bathroom and Shower",
-                fan:'Fan'
+                fan:'Fan',
+                cost: "From 100R$"
+
+            },
+            privateTwins:{
+                header:"Private Room",
+                include:"Twin bed",
+                people:"2 People",
+                what:'Private Balcony & Hammock',
+                shower:"Personal Bathroom and Shower",
+                fan:'Fan',
+                cost: "From 80R$"
+
+            },
+            camping:{
+                header:"Camping Area",
+                people:"Tent for 2 People (included)",
+                what:'Sheets (included)',
+                bath:"Shared Bathroom",
+                shower:'Shared shower',
+                cost: "From 20R$"
+
             }
         },
         contact:{
@@ -165,7 +191,7 @@ export default {
 
     'es-ES':{
         about: {
-            header: "Acerca de Lagarto",
+            header: "Acerca de Lagarto Na Banana",
             description:"A solo 13 minutos del bullicio del centro de Pipa y de " +
             "la maravillosa Praia do Amor, nuestra comunidad es el lugar ideal para conectar " +
             "con la naturaleza, contigo mismo y con otros viajeros aventureros en nuestro hogar/paraíso rodeado de selva."
@@ -260,11 +286,12 @@ export default {
             categoryAct: "Actividades",
             categoryFact: "Instalaciones",
             and: "e",
+            include: " Incluido",
             breakfast:"Desayuno",
             dinner:"Cena Vegetariana",
             dance:"Clases de Baile",
             surf:"Clases de Surf",
-            sound: "Sound Healing",
+
             med:"Meditación",
             yoga: "Yoga"
         },
@@ -277,7 +304,8 @@ export default {
             share:"Cocina compartida",
             bar: "Bar",
             area: "Área común",
-            bbq: "Parrilla"
+            bbq: "Parrilla",
+            include: " ",
         },
         directions:{
             header:"Cómo llegar",
@@ -304,23 +332,50 @@ export default {
 
             }
         },
-        room:{
-            header:"Habitaciones",
+        room: {
+            header: "Habitaciones",
+            free: "Desayuno y Yoga gratuito",
+            dorms: {
+                header: "Dormitorios",
+                people: "4 personas por cuarto",
+                what: 'Cuartos mixtos',
+                shower: 'Baños privados',
+                fan: 'Ventilador',
+                cost: "Apartir de 35R$"
+            },
 
-            dorms:{
-                header:"Dormitorios",
-                people:"4 personas por cuarto",
-                what:'Cuartos mixtos',
-                shower:'Baños privados',
-                fan:'Ventilador'
+            private: {
+                header: "Cuartos privados",
+                include:"Cama Doble",
+                people: "2 personas",
+                what: 'Balcón privado y hamaca',
+                shower: "Baños privados",
+                fan: 'Ventilador',
+                cost: "Apartir de 100R$"
+
+            },
+            privateTwins: {
+                header: "Cuartos privados",
+                include:"2 Camas de soltero",
+                people: "2 personas",
+                what: 'Balcón privado y hamaca',
+                shower: "Baños privados",
+                fan: 'Ventilador',
+                cost: "From 35R$",
+                cost: "Apartir de 80R$"
+
+
+            },
+            camping: {
+                header: "Área de camping",
+                people: "Tienda para 2 personas (incluido)",
+                what: 'Ropa de cama (incluidas)',
+                bath: "Baño compartido",
+                shower: 'Ducha compartida',
+                cost: "Apartir de 20R$"
+
+            }
         },
-            private:{
-                header:"Cuartos privados",
-                people:"2 personas",
-                what:'Balcón privado y hamaca',
-                shower:"Baños privados",
-                fan:'Ventilador'
-            }},
         contact:{
             header:"Contáctenos"
         }
@@ -328,7 +383,7 @@ export default {
     },
     'pt-PT':{
         about: {
-            header: "Sobre Lagarto",
+            header: "Sobre Lagarto Na Banana",
             description:"Estamos somente a 13 minutos do Centro e da incrível Praia do Amor. " +
             "Nosso espaço comunitário é o lugar ideal para você se conectar consigo mesmo, com a natureza e " +
             "também com outros aventureiros."
@@ -416,11 +471,12 @@ export default {
             categoryAct: "Atividades",
             categoryFact: "Instalações",
             and: "e",
+            include:"Incluído",
             breakfast:"Café da manhã",
             dinner:"Jantar Vegetariano",
             surf:"Aulas de surf",
             dance:"Aulas de dança",
-            sound: "Sound Healing",
+
             med:"Meditação",
             yoga: "Yoga"
 
@@ -433,7 +489,8 @@ export default {
             share:"Cozinha Compartilhada",
             area:"Área Comum",
             bbq:"Churrasqueira",
-            bar :"Bar"
+            bar :"Bar",
+            include: " ",
 
         },
         directions:{
@@ -463,22 +520,47 @@ export default {
         },
         room:{
             header:"Quartos",
+            free: "Café da manhã e Yoga grátis",
             dorms:{
                 header:"Dormitórios",
                 people:"4 pessoas por quarto",
                 what:'Quartos mistos',
                 shower:'Banheiro privado',
-                fan:'Ventilador'
+                fan:'Ventilador',
+                cost: "Apartir de 35R$"
+
             },
             private:{
-
-
                 header:"Quartos privados",
+                include:"Cama de casal",
                 people:"2 pessoas",
                 what:'Varanda privada e Rede',
                 shower:"Banheiro privado",
-                fan:'Ventilador'
-            }
+                fan:'Ventilador',
+                cost: "Apartir de 100R$"
+
+            },
+            privateTwins:{
+                header:"Quartos privados",
+                include:"2 camas de solteiro",
+                people:"2 pessoas",
+                what:'Varanda privada e Rede',
+                shower:"Banheiro privado",
+                fan:'Ventilador',
+                cost: "Apartir de 80R$"
+
+            },
+            camping:{
+                header:"Área de Camping",
+                people:"Tenda para 2 pessoas (incluso)",
+                what:'Lençois (incluso)',
+                bath:"Banheiro compartilhado",
+                shower:'Chuveiro compartilhado',
+                cost: "Apartir de 20R$"
+
+
+            },
+
         },
         contact:{
             header:"Fale Conosco"

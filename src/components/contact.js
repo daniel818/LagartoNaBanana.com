@@ -11,14 +11,6 @@ import Whatsapp from '../svg_components/whatsapp';
 import './contact.css'
 const Contact = () => {
 
-    let details = {
-    facebook: "https://www.facebook.com/lagartonabananahostel/",
-    instagram: "https://www.instagram.com/lagartonabananahostel/",
-    whatsapp: +5584996578129,
-    address: "Rua Travessa do Sol 22, Pipa",
-    email:"lagartonabanana@gmail.com"
-    };
-
     let contactItems=[
         {
             id:0,
@@ -104,8 +96,6 @@ const Contact = () => {
                 <img style={{width: "100%"}} src="/images/icons/brush-brown.png"/>
             </div>
 
-
-
                 <div className="col-12 item-style1" style={{paddingTop: "112px"}}>
                     <Header headerFont="'Knewave', cursive" headerCon="contact.header" />
                 </div>
@@ -121,8 +111,6 @@ const Contact = () => {
                 <div className="col-md-5 col-xs-12 col-sm-6 col-xl-4 item-style">
                     {creatList(booking)}
                 </div>
-
-
         </div>
 
     );

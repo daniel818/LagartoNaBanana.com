@@ -11,7 +11,8 @@ const Text = (props) =>{
     let textStyle = {
         fontSize : props.textSize,
         fontWeight: props.isBold ? "bold" :"none",
-        fontFamily: props.isEnglebert ?"'Englebert', sans-serif":"sans-serif"
+        fontFamily: props.isEnglebert ?"'Englebert', sans-serif":"sans-serif",
+        marginBottom: "0"
 
     };
 

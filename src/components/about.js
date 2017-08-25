@@ -43,15 +43,10 @@ class About extends Component{
                 {
                     id:4,
                     src:"/images/about/aboutlagarto5.png"
-                },
-
+                }
             ]
         }
-
-
     }
-
-
 
     render() {
        const { header } = this.state;
@@ -91,8 +86,22 @@ class About extends Component{
             position: "relative"
         };
 
-       return (
+        const image = this.state.images.map((image) =>{
+            return(
+                <div>
+                    <Image
+                        brushSrc="images/icons/brush-blue-new.png"
+                        brush2Src="images/icons/brush-blue-new.png"
+                        imgSrc={this.state.images[image.id].src}
+                        className="img-responsive"
+                        brushStyle={brushStyle}
+                        brush2Style={brush2Style}
+                    />
+                </div>
+            )
+        });
 
+       return (
 
            <div className="row" style={aboutStyle}>
 
@@ -102,87 +111,25 @@ class About extends Component{
 
                <div className="col-sm-12 col-xs-12 col-md-6 about-padding-top">
 
-                   <Header
-                       headerFont="'Knewave', cursive"
-                       headerCon={header}
-                       marginLeft="14%"
-                   />
+                   <Header headerFont="'Knewave', cursive" headerCon={header} marginLeft="14%"/>
 
                    <div className="text-about">
-                   <Text textSize={16} textCon={this.state.content}/>
+                       <Text textSize={16} textCon={this.state.content}/>
                    </div>
 
                </div>
-
 
                <div className="col-sm-12 col-xs-12 col-md-6 img-res-padding">
                    <div>
-
-                  <Slider {...settings} >
-                      <div>
-                          <Image
-                              brushSrc="images/icons/brush-blue-new.png"
-                              brush2Src="images/icons/brush-blue-new.png"
-                              imgSrc={this.state.images[0].src}
-                              className="img-responsive"
-                              brushStyle={brushStyle}
-                              brush2Style={brush2Style}
-                          />
-                      </div>
-                      <div>
-                          <Image
-                              brushSrc="images/icons/brush-blue-new.png"
-                              brush2Src="images/icons/brush-blue-new.png"
-                              imgSrc={this.state.images[1].src}
-                              className="img-responsive"
-                              brushStyle={brushStyle}
-                              brush2Style={brush2Style}
-                          />
-                      </div>
-                      <div>
-                          <Image
-                              brushSrc="images/icons/brush-blue-new.png"
-                              brush2Src="images/icons/brush-blue-new.png"
-                              imgSrc={this.state.images[2].src}
-                              className="img-responsive"
-                              brushStyle={brushStyle}
-                              brush2Style={brush2Style}
-                          />
-                      </div>
-                      <div>
-                          <Image
-                              brushSrc="images/icons/brush-blue-new.png"
-                              brush2Src="images/icons/brush-blue-new.png"
-                              imgSrc={this.state.images[3].src}
-                              className="img-responsive"
-                              brushStyle={brushStyle}
-                              brush2Style={brush2Style}
-                          />
-                      </div>
-                      <div>
-                          <Image
-                              brushSrc="images/icons/brush-blue-new.png"
-                              brush2Src="images/icons/brush-blue-new.png"
-                              imgSrc={this.state.images[4].src}
-                              className="img-responsive"
-                              brushStyle={brushStyle}
-                              brush2Style={brush2Style}
-                          />
-                      </div>
-
-                  </Slider>
-
+                       <Slider {...settings} >
+                           {image}
+                       </Slider>
                    </div>
                </div>
         </div>
-
-
-    );
-
+       );
     }
 }
-
-
 
 export default About;
 

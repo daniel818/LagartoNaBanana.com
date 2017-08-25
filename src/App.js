@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Home from './components/home';
 import About from './components/about';
 import Rooms from'./components/rooms';
+import Room from'./components/room';
+
 import ReviewSlider from './components/review_slider';
 import Contacts from './components/contact';
 import Activities from './components/activities';
@@ -28,7 +30,7 @@ class App extends Component {
           <About/>
           <Activities/>
           <ImageSlider/>
-          <Rooms/>
+          <Room/>
           <Map/>
           <Contacts/>
       </div>

@@ -14,6 +14,7 @@ import ReactGA from 'react-ga';
 ReactGA.initialize('UA-101371483-1');
 
 const Home = () =>{
+    const orderLink = "https://be-staging.frontdeskmaster.com/?hostelId=m%2F5%2B%2FrJ7YEeR%2Bqaj%2BajxEF6Cw4ARsrjS";
 
     let styleShadow = {
         boxShadow: "4px 4px 10px black"
@@ -61,7 +62,7 @@ const Home = () =>{
                         <Header headerFont="Knewave" isfontSize="true"  isPadding={(window.innerWidth < 576) ? "true" : "false"} headerCon="home.header2"/>
 
                         <div className="div-btn">
-                            <a href="https://reservation.frontdeskmaster.com/?hostelId=55YNdD2BGaOA8NEgg051Y5GjKNtPneSe"
+                            <a href={orderLink}
                                className="button"
                                onClick={()=> {handleClick()}} >
                                 <FormattedMessage id="home.button"/>

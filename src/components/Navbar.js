@@ -13,7 +13,7 @@ ReactGA.initialize('UA-101371483-1');
 
 
 const Navbar =(props) =>{
-
+    const orderLink = "https://be-staging.frontdeskmaster.com/?hostelId=m%2F5%2B%2FrJ7YEeR%2Bqaj%2BajxEF6Cw4ARsrjS"
     function handleClick() {
         ReactGA.event({
             category: 'Book Now',
@@ -49,10 +49,9 @@ const Navbar =(props) =>{
 
                     <li className="nav-item" >
                         <a style={{color: "#000000"}}
-                           href="https://reservation.frontdeskmaster.com/?hostelId=55YNdD2BGaOA8NEgg051Y5GjKNtPneSe"
+                           href="https://be-staging.frontdeskmaster.com/?hostelId=m%2F5%2B%2FrJ7YEeR%2Bqaj%2BajxEF6Cw4ARsrjS"
                            className="button1 nav-link"
                            onClick={()=>{
-                           console.log("Heyy");
                                handleClick()
                            }} >
                             <FormattedMessage id="home.button"/>

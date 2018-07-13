@@ -364,7 +364,6 @@ export default {
                 cost: "From 35R$",
                 cost: "Apartir de 80R$"
 
-
             },
             camping: {
                 header: "Área de camping",
@@ -379,8 +378,8 @@ export default {
         contact:{
             header:"Contáctenos"
         }
-
     },
+
     'pt-PT':{
         about: {
             header: "Sobre Lagarto Na Banana",
@@ -565,6 +564,5 @@ export default {
         contact:{
             header:"Fale Conosco"
         }
-
     }
 }

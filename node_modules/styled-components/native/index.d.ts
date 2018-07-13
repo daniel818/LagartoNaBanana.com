@@ -30,12 +30,12 @@ export interface StyledInterface extends BaseStyledInterface {
   DatePickerIOS: ReactNativeStyledFunction<ReactNative.DatePickerIOSProperties>;
   DrawerLayoutAndroid: ReactNativeStyledFunction<ReactNative.DrawerLayoutAndroidProperties>;
   Image: ReactNativeStyledFunction<ReactNative.ImageProperties>;
+  ImageBackground: ReactNativeStyledFunction<ReactNative.ImageBackgroundProperties>;
 
   KeyboardAvoidingView: ReactNativeStyledFunction<ReactNative.KeyboardAvoidingViewProps>;
   ListView: ReactNativeStyledFunction<ReactNative.ListViewProperties>;
   MapView: ReactNativeStyledFunction<ReactNative.MapViewProperties>;
   Modal: ReactNativeStyledFunction<ReactNative.ModalProperties>;
-  Navigator: ReactNativeStyledFunction<ReactNative.NavigatorProperties>;
   NavigatorIOS: ReactNativeStyledFunction<ReactNative.NavigatorIOSProperties>;
   Picker: ReactNativeStyledFunction<ReactNative.PickerProperties>;
   PickerIOS: ReactNativeStyledFunction<ReactNative.PickerIOSProperties>;
@@ -48,6 +48,7 @@ export interface StyledInterface extends BaseStyledInterface {
   SnapshotViewIOS: ReactNativeStyledFunction<ReactNative.SnapshotViewIOSProperties>;
   RecyclerViewBackedScrollView: ReactNativeStyledFunction<ReactNative.RecyclerViewBackedScrollViewProperties>;
   RefreshControl: ReactNativeStyledFunction<ReactNative.RefreshControlProperties>;
+  SafeAreaView: ReactNativeStyledFunction<ReactNative.SafeAreaView>;
   StatusBar: ReactNativeStyledFunction<ReactNative.StatusBarProperties>;
   SwipeableListView: ReactNativeStyledFunction<ReactNative.SwipeableListViewProps>;
   Switch: ReactNativeStyledFunction<ReactNative.SwitchProperties>;

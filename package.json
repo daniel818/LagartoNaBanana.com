@@ -10,6 +10,7 @@
     "react-google-map": "^3.0.1",
     "react-google-maps": "latest",
     "react-i18next": "^4.6.4",
+    "react-image-gallery": "^0.8.9",
     "react-images": "^0.5.4",
     "react-intl": "latest",
     "react-photo-gallery": "^5.6.1",
@@ -17,8 +18,9 @@
     "react-slick": "latest",
     "react-transition-group": "^1.2.0",
     "reactstrap": "^4.8.0",
-    "rebass": "latest",
+    "rebass": "^2.0.0-10",
     "redux": "^3.7.2",
+    "styled-components": "^3.3.3",
     "video-react": "^0.8.5"
   },
   "devDependencies": {

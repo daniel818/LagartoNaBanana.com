@@ -86,9 +86,9 @@ class About extends Component{
             position: "relative"
         };
 
-        const image = this.state.images.map((image) =>{
+        const image = this.state.images.map((image,i) =>{
             return(
-                <div>
+                <div key={i}>
                     <Image
                         brushSrc="images/icons/brush-blue-new.png"
                         brush2Src="images/icons/brush-blue-new.png"

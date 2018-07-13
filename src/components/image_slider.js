@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import Slider from 'react-slick';
-
+import ImageGallery from 'react-image-gallery'
 import Header from '../base components/header';
 
 import './image_slider.css';
@@ -69,13 +69,13 @@ const ImageSlider = () =>{
 
     const image = createSrc.map((image)=>{
         return(
-            <div><img className="img-slider-container" src={image} /></div>
+            <div key={image}><img className="img-slider-container" src={image} /></div>
 
         );
     });
     const imageGeneral = createSrcGeneral.map((image)=>{
         return(
-            <div><img className="img-slider-container" src={image} /></div>
+            <div key={image}><img className="img-slider-container" src={image} /></div>
 
         );
     });

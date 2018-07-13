@@ -62,7 +62,7 @@ const Map = () => {
             </div>
 
             <div className="col-md-6 map-res-padding align-self-center">
-                <iframe style={styles} src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJS-Ok-_uPsgcREuVrHw5Uzhs&key=AIzaSyCxiZX48pan0F7GhVzkzhVVKO_XAhBreTw" allowfullscreen/>
+                <iframe style={styles} src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJS-Ok-_uPsgcREuVrHw5Uzhs&key=AIzaSyCxiZX48pan0F7GhVzkzhVVKO_XAhBreTw" allowFullScreen/>
             </div>
             <div className="col-md-6 map-tab">
                 <Header headerFont="Knewave" headerCon={gettingHere.header} isPadding="true"/>

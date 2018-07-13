@@ -61,9 +61,9 @@ const ReviewSlider = () =>{
         }
     ];
 
-    const reviewItemGen = reviewItem.map((review)=>{
+    const reviewItemGen = reviewItem.map((review,i)=>{
         return (
-            <div className="carousel-item">
+            <div key={i} className="carousel-item">
                 <ReviewItem className="col" reviewItem={review}/>
             </div>
         );

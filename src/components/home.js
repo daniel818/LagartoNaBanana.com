@@ -14,8 +14,8 @@ import ReactGA from 'react-ga';
 ReactGA.initialize('UA-101371483-1');
 
 const Home = () =>{
-    const orderLink = "https://be-staging.frontdeskmaster.com/?hostelId=m%2F5%2B%2FrJ7YEeR%2Bqaj%2BajxEF6Cw4ARsrjS";
-
+    const orderLink = "https://booking.frontdeskmaster.com/?hostelId=m%2F5%2B%2FrJ7YEeR%2Bqaj%2BajxEF6Cw4ARsrjS";
+    
     let styleShadow = {
         boxShadow: "4px 4px 10px black"
     };
@@ -44,7 +44,7 @@ const Home = () =>{
                                 playsInline
                                 poster="/videos/poster.png"
                                 src="/videos/LagartoClipMixed.mp4"
-                                fluid='true'
+                                fluid={true}
                                 width={320}
                                 height={240}
                             >

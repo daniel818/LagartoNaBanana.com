@@ -14,7 +14,7 @@ import ReactGA from 'react-ga';
 ReactGA.initialize('UA-101371483-1');
 
 const Home = () =>{
-    const orderLink = "https://booking.frontdeskmaster.com/?hostelId=m%2F5%2B%2FrJ7YEeR%2Bqaj%2BajxEF6Cw4ARsrjS";
+    const orderLink = "https://new-booking.frontdeskmaster.com/?hostelId=m%2F5%2B%2FrJ7YEeR%2Bqaj%2BajxEF6Cw4ARsrjS";
     
     let styleShadow = {
         boxShadow: "4px 4px 10px black"
